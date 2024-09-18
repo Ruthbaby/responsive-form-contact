@@ -1,0 +1,143 @@
+
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  background-image: linear-gradient(to bottom, rgba(89, 124, 122, 0.32), rgba(209, 47, 246, 0.637)), url(images/telemedicine.png);
+  background-attachment: fixed;
+  opacity: 1;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contact {
+  background-color: rgba(210, 228, 253, 0.7);
+  padding: 10px;
+  margin: 50px 0;
+
+}
+#contact input, button  {
+  font: 400 15px helvetica, arial, sans-serif;
+}
+
+#contact h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #c20099;
+}
+
+#contact h3 {
+  margin: 5px 0 15px;
+  text-align: center;
+  color: #000;
+}
+
+.row {
+display: flex;
+width: 100% !important;
+padding: 20px 0;
+}
+
+.row .column {
+  margin: 0 20px;
+  width: 50%;
+}
+
+fieldset {
+  border: medium none !important;
+  min-width: 100%;
+  margin: 0 0 10px;
+  width: 100%; 
+}
+
+#contact input {
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 7px;
+  margin: 5px 0;
+}
+
+input[type="radio"] {
+  width: 10% !important;
+}
+#contact .row .radio {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin: 7px 0 10px;
+  padding: 5px;
+}
+ 
+#contact .row .idCard {
+  display: flex;
+  height: 50px !important;
+  margin: 5px 0;
+}
+
+#contact .row .idCard :first-child {
+  width: 80px;
+}
+
+#contact .row .idCard :last-child {
+  width: 40px;
+} 
+
+#contact .row #phone {
+  max-width: 100% !important;
+  padding-right:80px;
+} 
+
+#contact input:hover {
+  transition: border-color 0.3 ease-in-out;
+  border: 1px solid #ea77d1;
+}
+
+#contact button {
+  outline: none;
+  border: none;
+  background-color: #04b64e;
+  color: #fff;
+  margin: 0 0 5px 290px;
+  padding: 10px;
+  font-size: 17px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+#contact button:hover {
+  background-color: #8bd2a9;
+  border: 1px solid #fff;
+}
+
+/* mobile responsiveness */
+@media screen and(max-width: 480px){
+  .row {
+    flex-direction: column;
+  }
+  .row .column {
+    width: 90px !important;
+  }
+  #contact .row #phone {
+    
+    padding-right: 180px;
+  }
+  
+}
+
+
+
