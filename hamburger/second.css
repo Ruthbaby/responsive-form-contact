@@ -1,0 +1,83 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 60px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px;
+  transition: 0.3s;
+}
+.logo, img {
+  margin-left: 100px;
+  border-radius: 20%;
+}
+.nav-links li a:hover {
+  background-color: #72d5e6;
+  border-radius: 4px;
+}
+
+/* Hamburger styling */
+.hamburger {
+  display: none; /* Initially hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when hamburger is clicked */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
